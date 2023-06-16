@@ -23,12 +23,12 @@ namespace LinkedListDs
             //linkedList.RemoveFirstElement();
             //linkedList.Display();
             //linkedList.RemoveLastNode();
+            //linkedList.Display();
+            //linkedList.Search(30);
+            //linkedList.Display();
+            int position = linkedList.Search(30);
+            linkedList.Insert(position, 40);
             linkedList.Display();
-            linkedList.Search(30);
-            linkedList.Display();
-
-
-
 
         }
     }
