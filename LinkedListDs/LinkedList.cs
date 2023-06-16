@@ -55,5 +55,31 @@ namespace LinkedListDs
             }
 
         }
+        public void Insert(int Position, int data)
+        {
+            Node node1 = new Node(data);
+            if (this.head == null)
+            {
+                this.head = node1;
+            }
+            if (Position == 0)
+            {
+                node1.next = this.head;
+                this.head = node1;
+                return;
+            }
+            Node prev = null;
+            Node current = this.head;
+            int count = 0;
+            while (current != null && count < Position)
+            {
+                prev = current;
+                current = current.next;
+                count++;
+
+            }
+            node1.next = prev.next;
+            prev.next = node1;
+        }
     }
 }

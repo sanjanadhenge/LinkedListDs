@@ -12,11 +12,13 @@ namespace LinkedListDs
         {
             LinkedList linkedList = new LinkedList();
             linkedList.Add(56);
-            linkedList.Add(30);
+           // linkedList.Add(30);
             linkedList.Add(70);
             //linkedList.AddReverse(70);
             //linkedList.AddReverse(30);
             //linkedList.AddReverse(56);
+            linkedList.Display();
+            linkedList.Insert(1, 30);
             linkedList.Display();
 
         }
