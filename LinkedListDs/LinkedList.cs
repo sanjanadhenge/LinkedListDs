@@ -107,5 +107,22 @@ namespace LinkedListDs
             }
             node2.next = null;
         }
+        public int Search(int value)
+        {
+            Node node = this.head;
+            int count = 0;
+            while (node.next != null)
+            {
+                if (node.data.Equals(value))
+                {
+                    Console.WriteLine(count);
+                }
+                node = node.next;
+                count++;
+
+            }
+            return count;
+
+        }
     }
 }
