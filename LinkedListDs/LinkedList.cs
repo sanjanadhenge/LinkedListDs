@@ -90,5 +90,22 @@ namespace LinkedListDs
 
             this.head = this.head.next;
         }
+        public void RemoveLastNode()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked List is empty");
+            }
+            Node node2 = head;
+            if (head.next == null)
+            {
+                this.head = null;
+            }
+            while (node2.next.next != null)
+            {
+                node2 = node2.next;
+            }
+            node2.next = null;
+        }
     }
 }

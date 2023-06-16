@@ -18,11 +18,13 @@ namespace LinkedListDs
             //linkedList.AddReverse(30);
             //linkedList.AddReverse(56);
             //linkedList.Display();
-            //linkedList.Insert(1, 30);
+            //linkedList.Insert(1, 30);;
+            //linkedList.Display();
+            //linkedList.RemoveFirstElement();
+            //linkedList.Display();
+            linkedList.RemoveLastNode();
             linkedList.Display();
-            linkedList.Display();
-            linkedList.RemoveFirstElement();
-            linkedList.Display();
+
 
 
         }
