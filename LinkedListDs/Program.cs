@@ -28,8 +28,9 @@ namespace LinkedListDs
             //linkedList.Display();
             int position = linkedList.Search(30);
             linkedList.Insert(position, 40);
+            int position2 = linkedList.Search(40);
+            linkedList.DeleteNodeAtParticularPosition(position2 - 1);
             linkedList.Display();
-
         }
     }
 }
